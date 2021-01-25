@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0EBFEA23F58D3F00F8FEBD /* libjsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0EBFE923F58D3F00F8FEBD /* libjsi.a */; };
+		81B41DE71E37572A01107BFF /* libPods-IphoneTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4A020ED6F0381A00B64BB0 /* libPods-IphoneTest.a */; };
 		DC0EBFF423F5914F00F8FEBD /* JSCRuntime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBFF323F5914F00F8FEBD /* JSCRuntime.cpp */; };
 		DC0EBFF623F591CE00F8FEBD /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0EBFF523F591CE00F8FEBD /* JavaScriptCore.framework */; };
 		DC0EBFFC23F5921100F8FEBD /* TestBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBFF923F5921100F8FEBD /* TestBinding.cpp */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF45EA57ACEF4DECE6AFEC5D /* Pods-IphoneTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IphoneTest.release.xcconfig"; path = "Target Support Files/Pods-IphoneTest/Pods-IphoneTest.release.xcconfig"; sourceTree = "<group>"; };
+		C3F04478EB43E65A12551B3D /* Pods-IphoneTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IphoneTest.debug.xcconfig"; path = "Target Support Files/Pods-IphoneTest/Pods-IphoneTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0EBFE923F58D3F00F8FEBD /* libjsi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjsi.a; sourceTree = "<group>"; };
 		DC0EBFEB23F58D8D00F8FEBD /* jsilib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsilib.h; sourceTree = "<group>"; };
 		DC0EBFEC23F58D8D00F8FEBD /* JSIDynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIDynamic.h; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		DC3FCC2A231C23AB00A3CDC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC3FCC2C231C23AB00A3CDC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3FCC2D231C23AB00A3CDC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE4A020ED6F0381A00B64BB0 /* libPods-IphoneTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IphoneTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +54,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC0EBFF623F591CE00F8FEBD /* JavaScriptCore.framework in Frameworks */,
-				DC0EBFEA23F58D3F00F8FEBD /* libjsi.a in Frameworks */,
+				81B41DE71E37572A01107BFF /* libPods-IphoneTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2901556A117813F6FC2CA858 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3F04478EB43E65A12551B3D /* Pods-IphoneTest.debug.xcconfig */,
+				BF45EA57ACEF4DECE6AFEC5D /* Pods-IphoneTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC0EBFE823F58D3F00F8FEBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DC0EBFF523F591CE00F8FEBD /* JavaScriptCore.framework */,
 				DC0EBFE923F58D3F00F8FEBD /* libjsi.a */,
+				FE4A020ED6F0381A00B64BB0 /* libPods-IphoneTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 				DC3FCC1D231C23AA00A3CDC2 /* IphoneTest */,
 				DC3FCC1C231C23AA00A3CDC2 /* Products */,
 				DC0EBFE823F58D3F00F8FEBD /* Frameworks */,
+				2901556A117813F6FC2CA858 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC3FCC31231C23AB00A3CDC2 /* Build configuration list for PBXNativeTarget "IphoneTest" */;
 			buildPhases = (
+				6E42C37FCE912F42BFDC4915 /* [CP] Check Pods Manifest.lock */,
 				DC3FCC17231C23AA00A3CDC2 /* Sources */,
 				DC3FCC18231C23AA00A3CDC2 /* Frameworks */,
 				DC3FCC19231C23AA00A3CDC2 /* Resources */,
@@ -153,7 +168,7 @@
 		DC3FCC13231C23AA00A3CDC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = zifan.zx;
 				TargetAttributes = {
 					DC3FCC1A231C23AA00A3CDC2 = {
@@ -191,6 +206,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E42C37FCE912F42BFDC4915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IphoneTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC3FCC17231C23AA00A3CDC2 /* Sources */ = {
@@ -232,6 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					X86_64,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +298,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,6 +329,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -291,6 +337,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					X86_64,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -313,6 +363,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -337,12 +388,18 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
 		DC3FCC32231C23AB00A3CDC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F04478EB43E65A12551B3D /* Pods-IphoneTest.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					X86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IphoneTest/Info.plist;
@@ -357,12 +414,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zifan.zx.IphoneTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
 		DC3FCC33231C23AB00A3CDC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF45EA57ACEF4DECE6AFEC5D /* Pods-IphoneTest.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					X86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IphoneTest/Info.plist;
@@ -377,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zifan.zx.IphoneTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
 			};
 			name = Release;
 		};

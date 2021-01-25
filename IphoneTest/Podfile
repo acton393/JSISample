@@ -1,0 +1,4 @@
+platform :ios, '9.0'
+target 'IphoneTest' do
+    pod 'JSI',:git=>"https://github.com/acton393/JSI.git",:branch=>'master'
+end

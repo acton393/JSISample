@@ -1,0 +1,41 @@
+PODS:
+  - boost-for-react-native (1.63.0)
+  - DoubleConversion (1.1.5)
+  - Folly (2016.09.26.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.4)
+  - JSI (0.0.1):
+    - Folly
+
+DEPENDENCIES:
+  - JSI (from `https://github.com/acton393/JSI.git`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - boost-for-react-native
+    - DoubleConversion
+    - Folly
+    - glog
+
+EXTERNAL SOURCES:
+  JSI:
+    :branch: master
+    :git: https://github.com/acton393/JSI.git
+
+CHECKOUT OPTIONS:
+  JSI:
+    :commit: ce9ce3fdb796a8e1abfb053f846ce510da5afc8d
+    :git: https://github.com/acton393/JSI.git
+
+SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
+  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
+  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  JSI: 4df75f6425854927068e630d253b742cda679b9c
+
+PODFILE CHECKSUM: 7fe087faab8bde48c17eba8356e2b0f754e3d522
+
+COCOAPODS: 1.10.0
